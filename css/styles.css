@@ -41,6 +41,17 @@ img {
   margin: 0 auto;
 }
 
+.container-team {
+  /*змінені значення 
+  max-width: 1158px;
+  padding-left: 156px;
+  padding-right: 156px;*/
+  max-width: 320px;
+  padding-left: 28px;
+  padding-right: 28px;
+  margin: 0 auto;
+}
+
 .container-box {
   display: flex;
 }
@@ -141,11 +152,16 @@ a:focus {
   color: #404bbf;
 }
 
+/* -------Секція hero*/
+
 .section-title {
   background-color: #2e2f42;
+  /*Змінюємо
   padding: 188px 0;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
-  max-width: 1440px;
+  max-width: 1440px;*/
+  padding: 72px 0;
+  max-width: 320px;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -154,8 +170,11 @@ a:focus {
 }
 
 .hero-title {
+  /*Змінюємо
   font-size: 56px;
-  line-height: 1.07;
+  line-height: 1.07;*/
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
@@ -196,6 +215,8 @@ a:focus {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
+/* -----------Секція feature */
 
 .section-feature {
   /*змынюэмо значення
@@ -266,6 +287,8 @@ a:focus {
   color: #434455;
 }
 
+/*------------Секція team*/
+
 .section-team {
   background-color: #f4f4fd;
   /*Змінюємо
@@ -304,6 +327,8 @@ a:focus {
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
+
 
 .work {
   padding: 32px 0;
@@ -358,20 +383,28 @@ a:focus {
   color: #434455;
 }
 
+/*-----------Секція portfolio*/
+
 .section-portfolio {
+  /*Змінюємо
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 120px;*/
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .section-portfolio-item {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  /*Змінюємо
+  gap:  48px 24px;*/
+  gap: 48px;
 }
 
 .section-portfolio-list {
-  width: calc((100% - 48px) / 3);
+  /*Змінюємо
+  width: calc((100% - 48px) / 3);*/
+  width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -428,18 +461,39 @@ a:focus {
   color: #434455;
 }
 
+/*----------Секція Футера*/
+
 .conteiner-footer {
   display: flex;
   align-items: baseline;
+  /*Додаємо*/
+  flex-wrap: wrap;
 }
 
+/*Змінюємо
 .footer-box {
-  margin-right: 120px;
-}
+margin-right: 120px;
+}*/
 
 .footer-color {
   background-color: #2e2f42;
-  padding: 100px 0;
+  /*змінюємо
+  padding: 100px 0;*/
+  padding: 96px 16px;
+}
+
+.logo-footer {
+  margin-bottom: 16px;
+  /*Додаємо*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 0px;
+}
+
+.logo-web-footer {
+  color: #f4f4fd;
 }
 
 .footer-text {
@@ -477,9 +531,8 @@ a:focus {
 .link-footer:hover,
 .link-footer:focus {
   background-color: #31d0aa;
-  ;
+  
 }
-
 
 .form-section {
   margin-left: 80px;
@@ -552,19 +605,14 @@ a:focus {
   fill: #fff;
 }
 
-.logo-footer {
-  display: inline-block;
-  margin-bottom: 16px;
-}
-
-.logo-web-footer {
-  color: #f4f4fd;
-}
-
 .one {
   color: #404bbf;
 }
 
+
+
+
+ /*--------Секція модал*/
 .modal-conteiner {
   position: fixed;
   top: 0;
@@ -768,47 +816,145 @@ a:focus {
   .container {
     max-width: 768px;
   }
+ /*----------Секція feature*/
+  .section-title {
+    padding: 112px 0;
+    width: 100%;
+    max-width: 768px;
+  }
 
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+  }
+
+  .section-title {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name-tg.jpg);
+  }
+/*----------Секція feature*/
   .section-feature-item {
-    gap: 24px;
-    flex-wrap: nowrap;
+    gap:72px 24px;
   }
 
   .section-feature-items {
-     width: calc((100% - 24px) / 2);
-     
+    width: calc((100% - 24px) / 2);   
+  }
+
+  /*Секція команди*/
+
+  .container-team {
+    width: 100%;
+    max-width: 768px;
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+  
+  .section-list-item {
+    gap: 64px 24px;
+  }
+  
+  .section-list {
+    width: calc((100% - 24px) / 2);
+  }
+
+   /*Секція ПОртфоліо*/
+
+  .section-portfolio-item {
+    gap: 72px 24px;
+  }
+
+  .section-portfolio-list {
+    width: calc((100% - 24px) / 2);
   }
 }
 
-/* --комп--*/
+/* --КОМП--*/
 @media screen and ( min-width: 1158px ) {
   .container {
     width: 100%;
+    max-width: 1158px;
     padding-left: 156px;
     padding-right: 156px;
   }
+ /*----------Секція hero*/
+ .section-title {
+  padding: 188px 0;
+  width: 100%;
+  max-width: 1158px;
+ }
 
+ .hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+ }
+
+ .section-title {
+   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
+ /*----------Секція feature*/
   .section-feature {
     padding-top: 120px;
     padding-bottom: 120px;
-}
+  }
 
-.section-feature-item {
-  flex-wrap: nowrap;
-}
+  .section-feature-item {
+    flex-wrap: nowrap;
+  }
 
   .section-feature-items {
     width: calc((100% - 72px) / 4);
   }
 
- .icons {
-  display: flex; 
-  align-items: center;
-  justify-content: center;
-  height: 112px;
-  background-color: #f4f4fd; 
-  border-radius: 4px;
-  border: 1px solid #8e8f99;
-  margin-bottom: 8px; 
- }
+  .icons {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd; 
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    margin-bottom: 8px; 
+  }
+
+  /*Секція команди*/
+  .container-team{
+    width: 100%;
+    max-width: 1158px;
+    padding-left: 156px;
+    padding-right: 156px;
+  }
+
+  .section-team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .section-list-item {
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+
+  .section-list {
+    width: calc((100% - 72px) / 4);
+  }
+
+  /*Секція ПОртфоліо*/ 
+
+  .section-portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .section-portfolio-item {
+    gap:  48px 24px;
+  }
+
+  .section-portfolio-list {
+    width: calc((100% - 48px) / 3);
+  }
+
+  /*----------Секція Футера*/
+
+  .footer-box {
+    margin-right: 120px;
+  }
 }
